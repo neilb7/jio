@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  match '/users/:id', to: 'users#show', via: 'get'
+
+  match '/users', to: 'users#index', via: 'get'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   devise_for :users
+  resources :users, :only =>[:show]
   root 'pages#home'
 
   get 'pages/about'

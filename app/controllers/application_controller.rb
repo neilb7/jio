@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
 
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
+  # Helpers
+  helper_method :authenticate_admin
+
+  def authenticate_admin
+    deny_admin_access unless admin_signed_in?
+  end 
+
   protected
 
   def configure_permitted_parameters
