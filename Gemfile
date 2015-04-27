@@ -15,6 +15,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
 gem "haml-rails", "~> 0.9"
+gem 'rails_admin'
 
 gem 'spring',        group: :development
 
