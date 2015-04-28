@@ -48,7 +48,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: 
-  username: 
-  # password: <%= ENV['NO_FACE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  database: jf_production
+  username: jio
+  password: <%= ENV['jf_production_password'] %>

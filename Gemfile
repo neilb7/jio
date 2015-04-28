@@ -16,8 +16,8 @@ gem 'paperclip'
 gem 'acts-as-taggable-on'
 gem "haml-rails", "~> 0.9"
 gem 'rails_admin'
-# gem 'pg', '~> 0.18.1', group: :production
-# gem 'rails_12factor', group: :production
+gem 'pg', '~> 0.18.1', group: :production
+gem 'rails_12factor', group: :production
 
 gem 'spring',        group: :development
 
