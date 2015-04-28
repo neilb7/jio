@@ -20,6 +20,8 @@ gem 'pg', '~> 0.18.1', group: :production
 gem 'rails_12factor', group: :production
 
 gem 'spring',        group: :development
+gem 'better_errors',        group: :development
+
 
 
 
