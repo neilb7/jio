@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'programs/index'
+
+  get 'programs/show'
+
   resources :programs
 
   match '/users/:id', to: 'users#show', via: 'get'

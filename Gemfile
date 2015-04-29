@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'bootstrap-sass'
 gem 'devise'
-gem 'paperclip'
+gem 'carrierwave'
 gem 'acts-as-taggable-on'
 gem "haml-rails", "~> 0.9"
 gem 'rails_admin'
